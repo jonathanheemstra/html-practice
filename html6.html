@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style media="screen">
+        body {
+            margin: auto;
+            width: 960px;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            margin: 0px 0px 30px 0px;
+        }
+
+        .button {
+            padding: 20px 75px;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 35px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .flat {
+            background: #2C3E50;
+            color: white;
+            border-right: 3px solid #19242E;
+            border-bottom: 5px solid #19242E;
+        }
+
+        .flat:hover {
+            background: #FF2819;
+            color: white;
+            border-right: 3px solid #AA2819;
+            border-bottom: 5px solid #AA2819;
+        }
+
+        .flat:active {
+            border: 0px;
+            transform: translate(3px, 5px);
+            -webkit-transform: translate(3px, 5px);
+        }
+
+        .popup {
+            width: 700px;
+            height: 400px;
+            border: 1px solid black;
+            margin: auto;
+            display: none;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .popup:target {
+            display: table;
+            position: absolute;
+            background-color: grey;
+        }
+
+        .popup-content {
+            background-color: white;
+            margin: auto;
+            width: 700px;
+            height: 500px;
+            vertical-align: middle;
+        }
+        .popup-content img {
+          padding: 50px;
+        }
+        .close {
+            font-size: 25px;
+            float: right;
+            margin: 20px 20px 0px 0px;
+            font-weight: bolder;
+        }
+
+        .close:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>This button opens a suprise</h1>
+        <h3>click it to find out</h3>
+        <br>
+        <a href="#popup" class="button flat">Open</a>
+    </header>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <a href="#" class="close">X</a>
+            <img src="https://cdn.meme.am/instances/55014956.jpg" alt="Surprise!!" />
+        </div>
+    </div>
+</body>
+
+</html>
