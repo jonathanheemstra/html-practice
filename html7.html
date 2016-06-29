@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style media="screen">
+        body {
+            margin: 0 auto;
+            width: 80%;
+            font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
+        }
+        a {
+          text-decoration: none;
+        }
+        li {
+            list-style: none;
+            display: inline;
+        }
+
+        .footer {
+            font-size: 12px;
+            float: left;
+            width: 100%;
+            padding: 0px;
+        }
+
+        .footer li {
+            margin: 0px 10px;
+            font-weight: bold;
+        }
+        .footer li:last-of-type {
+          float: right;
+          margin-right: 0px;
+        }
+
+        img.ios {
+            width: 150px;
+            margin: 0px 5px;
+        }
+
+        img.android {
+            width: 127px;
+            margin: 0px 5px;
+        }
+        .signin, .signup, .apps-buttons {
+          border: 1px solid black;
+          width: 35%;
+          float: left;
+          text-align: center;
+          margin: 90px 40px 10px 40px;
+        }
+        .signup, .apps-buttons {
+
+        }
+        .signup {
+          padding: 20px 0px;
+          margin-top: 0px;
+          min-height: 0px;
+        }
+        .apps-buttons {
+          border: none;
+          margin-top: 0px;
+        }
+        .phone {
+          width: 40%;
+          height: 600px;
+          float: left;
+          margin: 0px 40px;
+          background: url("https://instagramstatic-a.akamaihd.net/h1/images/homepage/home-phones@2x.png/f82c2ede4ccb.png");
+          background-repeat: no-repeat;
+          background-size: 450px 600px;
+        }
+        .or {
+          padding: 20px 0px;
+        }
+        .facebook {
+          padding: 0px 0px 20px 0px;
+        }
+        input {
+          width: 80%;
+          height: 35px;
+          margin: 2px;
+        }
+        input[type="submit"] {
+          background-color: blue;
+          color: white;
+          margin-top: 7px;
+          font-size: 20px;
+        }
+        input[type="text"] {
+          font-size: 20px;
+          color: grey;
+        }
+        .forgot {
+          position: absolute;
+          top: 230px;
+          right: 305px;
+          font-size: 15px;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="phone">
+    </div>
+    <div class="signin">
+        <h1>Instagram</h1>
+        <form action="" method="">
+            <input type="text" name="username" value="username">
+            <br>
+            <input type="text" name="password" value="password">
+            <br>
+            <input type="submit" value="Log in">
+        </form>
+        <a class="forgot" href="#">Forgot?</a>
+        <div class="or">
+            OR
+        </div>
+        <div class="facebook">
+            <a href="#">Log in with Facebook</a>
+        </div>
+    </div>
+    <div class="signup">
+        Don't have an account? <a href="#">Sign up</a>
+    </div>
+    <div class="apps-buttons">
+        <p>Get the app.</p>
+        <img class="ios" src="https://instagramstatic-a.akamaihd.net/h1/images/appstore-install-badges/badge_ios_english-en.png/4b70f6fae447.png" alt="instagram iOS app" />
+        <img class="android" src="https://instagramstatic-a.akamaihd.net/h1/images/appstore-install-badges/english_get.png/74c874cf7dc5.png" alt="instagram android app" />
+    </div>
+
+    <ul class="footer">
+        <li>ABOUT US</li>
+        <li>SUPPORT</li>
+        <li>BLOG</li>
+        <li>PRESS</li>
+        <li>API</li>
+        <li>JOBS</li>
+        <li>PRIVACY</li>
+        <li>TERMS</li>
+        <li>LANGUAGE</li>
+        <li>© 2016 INSTAGRAM</li>
+    </ul>
+</body>
+
+</html>
