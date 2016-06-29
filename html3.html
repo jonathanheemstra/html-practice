@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 800px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        input {
+            margin: 5px 0px;
+            width: 250px;
+        }
+
+        input[type="text"] {
+            height: 25px;
+            font-size: 18px;
+        }
+
+        input[type="submit"] {
+            border-radius: 5px;
+            background-color: #2C3E50;
+            color: white;
+            border-bottom: 5px solid #19242E;
+            border-right: 3px solid #19242E;
+            margin-top: 10px;
+            width: 125px;
+            font-size: 20px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+
+        input[type="submit"]:hover {
+            background: #486582;
+            border-bottom: 3px solid #384F66;
+            border-right: 2px solid #384F66;
+            margin-top: 12px;
+            text-transform: uppercase;
+        }
+
+        input[type="submit"]:active {
+            background: #486582;
+            border-bottom: 0px;
+            border-right: 0px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form method="post" action="">
+        First Name:
+        <br>
+        <input type="text" name="firstname">
+        <br>
+        Last Name:
+        <br>
+        <input type="text" name="lastname">
+        <br>
+        <input type="submit" name="SUBMIT">
+        <br>
+    </form>
+</body>
+
+</html>
