@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style media="screen">
+      html, body {
+        overflow-x: hidden;
+      }
+      nav {
+        width: 100%;
+      }
+      nav ul {
+        width: 90%;
+        margin: 0 auto;
+      }
+      nav li {
+        display: inline;
+        padding: 0px 10px;
+      }
+      header, section {
+        width: 90%;
+        margin: 0 auto;
+      }
+      li {
+        list-style: none;
+      }
+      #clients img {
+        width: 100px;
+      }
+      #clients li {
+        display: inline;
+        width: 24%;
+        float: left;
+        padding: 10px 0px;
+        border: 1px solid black;
+        text-align: center;
+      }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">clients</a></li>
+            <li><a href="#">testimonials</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Hi, I am Jonathan Heemstra</h1>
+        <h2>Marketing Optimization Specialist | Full Stack Developer</h2>
+        <a href="#">Learn more</a>
+    </header>
+    <main>
+        <section id="about" title="about">
+            <h2>About</h2>
+            <p>Ligula sociis elementum. Varius. Cursus neque. Massa commodo eleifend. Mauris erat sit montes conubia viverra semper senectus per enim. Lobortis sollicitudin porttitor vel non nibh ligula, elit dis. Ligula primis sed. Eleifend iaculis eros fames.</p>
+            <p>Dis nisi mattis. Quis fringilla ridiculus laoreet tempus quam per. Elit magnis consectetuer sodales sagittis. Inceptos. Ac, elementum eu ultrices scelerisque in et hac primis viverra proin pretium natoque iaculis, nulla Pellentesque mauris elementum.</p>
+            <p>Viverra nullam. Ornare per auctor. Ac eget cubilia. Praesent porttitor. Netus senectus. Sollicitudin conubia nisl ac auctor nulla ipsum non ultricies venenatis hac nam vel, dictumst lobortis etiam est consequat eleifend.</p>
+        </section>
+        <section id="portfolio" title="portfolio">
+            <h2>Portfolio</h2>
+            <h3>Site 1</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://cdn.epicski.com/3/3b/500x700px-LL-3bd91555_linesirfrancisbacon2014.jpeg" alt="" />
+            <h3>Site 2</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://cdn.shopify.com/s/files/1/0593/8853/files/underworld_08903781-bbd7-4736-b756-481ce4c462f9.jpg?9494719010798862943" alt="" />
+            <h3>Site 3</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://cdn.shopify.com/s/files/1/0593/8853/files/bibby4.jpg?3978164201079921693" alt="" />
+            <h3>Site 4</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://cdn.shopify.com/s/files/1/0593/8853/files/Deathwish.jpg?3044192713421549149" alt="" />
+            <h3>Site 5</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://cdn.shopify.com/s/files/1/0593/8853/files/Sierra.jpg?13369202667176609971" alt="" />
+            <h3>Site 6</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://i.ebayimg.com/00/s/NTAwWDUwMA==/z/8~IAAOxygPtSslaz/$_3.JPG?set_id=2" alt="" />
+            <h3>Site 7</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://cdn.epicski.com/6/61/500x700px-LL-61ae474f_momentdeathwish2015.jpeg" alt="" />
+            <h3>Site 8</h3>
+            <p>Lacinia varius accumsan venenatis ad Velit mollis diam tortor euismod.</p>
+            <img src="http://mtnmeister.com/wp-content/uploads/2014/12/29-Gear_Nick-Knecht.png" alt="" />
+        </section>
+        <section id="clients" title="clients">
+            <h2>Clients</h2>
+            <ul>
+              <li><img src="http://vectorlogofree.com/wp-content/uploads/2014/06/49408-linkedin-logo-icon-vector-icon-vector-eps.png" alt="" /></li>
+              <li><img src="http://vectorlogofree.com/wp-content/uploads/2014/02/23822-steam-logo-games-website-icon-vector-icon-vector-eps.png" alt="" /></li>
+              <li><img src="http://vectorlogofree.com/wp-content/uploads/2014/08/49364-instagram-social-network-logo-of-photo-camera-icon-vector-icon-vector-eps.png" alt="" /></li>
+              <li><img src="http://icons.iconarchive.com/icons/icons8/windows-8/256/Logos-Xbox-icon.png" alt="" /></li>
+              <li><img src="http://vectorlogofree.com/wp-content/uploads/2014/06/49408-linkedin-logo-icon-vector-icon-vector-eps.png" alt="" /></li>
+              <li><img src="http://vectorlogofree.com/wp-content/uploads/2014/02/23822-steam-logo-games-website-icon-vector-icon-vector-eps.png" alt="" /></li>
+              <li><img src="http://vectorlogofree.com/wp-content/uploads/2014/08/49364-instagram-social-network-logo-of-photo-camera-icon-vector-icon-vector-eps.png" alt="" /></li>
+              <li><img src="http://icons.iconarchive.com/icons/icons8/windows-8/256/Logos-Xbox-icon.png" alt="" /></li>
+            </ul>
+        </section>
+        <section id="testimonials" title="testimonials">
+            <h2>Testimonials</h2>
+            <h3>Testimonial 1</h3>
+            <p>Eu habitasse accumsan, dictumst iaculis lorem. Nostra dis hymenaeos adipiscing tellus nascetur in eu ac taciti semper. Montes maecenas viverra.</p>
+            <h3>Testimonial 2</h3>
+            <p>Eu habitasse accumsan, dictumst iaculis lorem. Nostra dis hymenaeos adipiscing tellus nascetur in eu ac taciti semper. Montes maecenas viverra.</p>
+            <h3>Testimonial 3</h3>
+            <p>Eu habitasse accumsan, dictumst iaculis lorem. Nostra dis hymenaeos adipiscing tellus nascetur in eu ac taciti semper. Montes maecenas viverra.</p>
+        </section>
+        <section id="contact" title="contact">
+            <h2>Contact</h2>
+            <form action="" method="">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name">
+                <br>
+                <label for="body">Let's work together</label>
+                <br>
+                <input type="text" name="body">
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
