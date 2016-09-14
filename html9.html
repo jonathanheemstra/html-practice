@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
     <style media="screen">
         body {
-            background-color: grey;
+            background-color: #212121;
         }
 
         blockquote {
@@ -20,14 +20,14 @@
             padding: 50px 50px 80px 50px;
             font-family: 'Roboto', sans-serif;
             font-weight: 100;
+            position: relative;
+            display: block;
+        }
+        blockquote:after, blockquote:before {
+          content: "\201C";
         }
         blockquote:after {
           content: "\201D";
-          font-size: 50px;
-        }
-        blockquote:before {
-          content: "\201C";
-          font-size: 50px;
         }
         .testimony {
           float: left;
@@ -37,6 +37,7 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             text-align: center;
+            color: #eee;
         }
 
         .headshot {
@@ -50,6 +51,9 @@
         img {
             height: 100px;
             width: 100px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
